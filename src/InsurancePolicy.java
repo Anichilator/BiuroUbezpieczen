@@ -1,24 +1,27 @@
+import java.util.*;
 abstract class InsurancePolicy {
     private String policyNumber;
-    private double premium;
+    private double contribution;
 
-    public InsurancePolicy(String policyNumber, double premium) {
+    public InsurancePolicy(String policyNumber, double contribution) {
         this.policyNumber = policyNumber;
-        this.premium = premium;
+        this.contribution = contribution;
     }
-
+    public double getContribution() {
+        return contribution;
+    }
     public String getPolicyNumber() {
         return policyNumber;
     }
 
-    public double getPremium() {
-        return premium;
-    }
 
-    public abstract double calculatePremium();
+    public abstract double calculateContribution();
 
     @Override
     public String toString() {
-        return "Policy Number: " + policyNumber + ", Premium: " + premium;
+        return "InsurancePolicy{" +
+                "policyNumber='" + policyNumber + '\'' +
+                ", contribution=" + contribution +
+                '}';
     }
 }

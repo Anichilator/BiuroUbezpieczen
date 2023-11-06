@@ -1,13 +1,14 @@
+import java.util.*;
 public class LifeInsurancePolicy extends InsurancePolicy {
     private int coverage;
 
-    public LifeInsurancePolicy(String policyNumber, double premium, int coverage) {
-        super(policyNumber, premium);
+    public LifeInsurancePolicy(String policyNumber, double contribution, int coverage) {
+        super(policyNumber, contribution);
         this.coverage = coverage;
     }
 
     @Override
-    public double calculatePremium() {
-        return getPremium() * 0.05 * coverage;
+    public double calculateContribution() {
+        return getContribution() * 0.05 * coverage;
     }
 }
