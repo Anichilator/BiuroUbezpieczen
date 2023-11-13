@@ -1,5 +1,7 @@
+package glowna.klasy;
+
 import java.util.*;
-abstract class InsurancePolicy {
+public abstract class InsurancePolicy {
     private String policyNumber;
     private double contribution;
 
@@ -19,7 +21,7 @@ abstract class InsurancePolicy {
 
     @Override
     public String toString() {
-        return "InsurancePolicy{" +
+        return "glowna.klasy.InsurancePolicy{" +
                 "policyNumber='" + policyNumber + '\'' +
                 ", contribution=" + contribution +
                 '}';

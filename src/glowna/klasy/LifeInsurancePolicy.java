@@ -1,4 +1,5 @@
-import java.util.*;
+package glowna.klasy;
+
 public class LifeInsurancePolicy extends InsurancePolicy {
     private int coverage;
 

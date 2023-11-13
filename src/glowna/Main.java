@@ -1,3 +1,9 @@
+package glowna;
+
+import glowna.klasy.HealthInsurancePolicy;
+import glowna.klasy.InsurancePolicy;
+import glowna.klasy.LifeInsurancePolicy;
+
 import java.util.*;
 
 public class Main {
